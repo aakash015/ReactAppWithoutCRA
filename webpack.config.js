@@ -46,10 +46,12 @@ module.exports={
          * "only" is used if enable Hot Module Replacement without page 
          * refresh as a fallback in case of build failures
          */
+        //reload only the file in which changes are there
         hot: true,
         /** "liveReload"
          * disable live reload on the browser. "hot" must be set to false for this to work
         */
+       //reloads the complete app irrespective of the file change
         liveReload: false
     },
     resolve: {
